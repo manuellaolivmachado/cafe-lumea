@@ -1,6 +1,6 @@
 # ☕ Café Lumea
 
-Projeto de um site para uma cafeteria, desenvolvido para praticar:
+Desenvolvi um projeto de um site para uma cafeteria para minha aula de Algoritmos e Programação, utilizei:
 HTML, CSS e JavaScript.
 
 ## 💻 Tecnologias
