@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Café Lumea</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>☕ Café Lumea</h1>
+        <p>Um momento especial começa com um bom café.</p>
+    </header>
+
+
+    <main>
+
+        <!-- TELA INICIAL -->
+        <section id="telaInicio" class="tela">
+
+            <h2>Selecione uma categoria</h2>
+
+            <div class="categorias">
+
+                <button class="categoria" onclick="mostrarBebidas()">
+                    <span>☕</span>
+                    <strong>Bebidas</strong>
+                    <small>Cafés e bebidas</small>
+                </button>
+
+                <button class="categoria" onclick="mostrarComidas()">
+                    <span>🍰</span>
+                    <strong>Comidas</strong>
+                    <small>Bolos e salgados</small>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- TELA DE PRODUTOS -->
+        <section id="telaProdutos" class="tela escondido">
+
+            <button class="voltar" onclick="voltarInicio()">
+                ← Voltar
+            </button>
+
+            <h2 id="tituloProdutos"></h2>
+
+            <div id="listaProdutos" class="produtos"></div>
+
+            <button class="botao-pedido" onclick="mostrarPedido()">
+                🛒 Ver meu pedido
+            </button>
+
+        </section>
+
+
+        <!-- TELA DO PEDIDO -->
+        <section id="telaPedido" class="tela pedido escondido">
+
+            <button class="voltar" onclick="voltarProdutos()">
+                ← Voltar
+            </button>
+
+            <h2>🛒 Seu pedido</h2>
+
+            <div id="listaPedido"></div>
+
+            <div class="total">
+                <span>Total:</span>
+                <strong id="valorTotal">R$ 0,00</strong>
+            </div>
+
+            <div class="acoes">
+
+                <button class="botao-secundario" onclick="voltarInicio()">
+                    Adicionar mais pedidos
+                </button>
+
+                <button class="botao-finalizar" onclick="finalizarPedido()">
+                    Finalizar pedido
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Café Lumea</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
